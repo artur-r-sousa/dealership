@@ -24,7 +24,7 @@ export default function BannerCarousel({ imgWidth, imgHeigth }: BannerCarouselPr
     }
   }, 3000)
   return (
-    <Col roundedBackground>
+    <Col isroundedbackground>
       <MainImageBox>
         <Image
           src={currImg}

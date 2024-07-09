@@ -33,6 +33,15 @@ import { missionText } from "../../utils/copy";
 import ProductsInlineRow from "@/app/components/ProductsInlineRow";
 import BannerCarousel from "@/app/components/BannerCarousel";
 
+import buickImage from '../../../public/images/buick_regal_gs_car_luxury_car_mid_size_car_sedan_white_car_hd_cars-1920x1080.jpg';
+import bmwImage from '../../../public/images/bmw-5-series-touring-m-sport.jpg';
+import lamborghiniImage from '../../../public/images/lamborghini_egoista.jpg';
+import bmwX2Image from '../../../public/images/bmw-x2-m-sport.jpg';
+import luxuryMotorsportsImage from '../../../public/images/car-hd-2011.jpg';
+import chevroletCamaroImage from '../../../public/images/chevrolet_camaro_coupe_muscle_car_red_car_hd_cars-1920x1080.jpg';
+import jaguarImage from '../../../public/images/jaguar-car.jpg';
+import fordMustangImage from '../../../public/images/ford_mustang_67.jpg';
+
 export default function MainPage() {
   const winSize = useWindowSize();
   const [imgWidth, setImgWidth] = useState(0);
@@ -63,7 +72,7 @@ export default function MainPage() {
       <Row>
         <MainImageBox>
           <Image
-            src={require('../../../public/images/ford_mustang_67.jpg')}
+            src={fordMustangImage}
             alt='ford_mustang_67'
             width={imgWidth}
             height={imgHeigth}
@@ -105,30 +114,28 @@ export default function MainPage() {
         <ProductsInLine>
           <CategoryTitle>Best Selling Products</CategoryTitle>
           <ProductsInlineRow
-            data={
-              [
-                {
-                  title: 'BMW X2 M Sport',
-                  value: '3000',
-                  imgSrc: require('../../../public/images/bmw-x2-m-sport.jpg')
-                },
-                {
-                  title: 'Luxury Motorsports',
-                  value: '9000',
-                  imgSrc: require('../../../public/images/car-hd-2011.jpg')
-                },
-                {
-                  title: 'Chevrolet Camaro',
-                  value: '9000',
-                  imgSrc: require('../../../public/images/chevrolet_camaro_coupe_muscle_car_red_car_hd_cars-1920x1080.jpg')
-                },
-                {
-                  title: 'Jaguar Silver Back',
-                  value: '9000',
-                  imgSrc: require('../../../public/images/jaguar-car.jpg')
-                }
-              ]
-            }
+            data={[
+              {
+                title: 'BMW X2 M Sport',
+                value: '3000',
+                imgSrc: bmwX2Image
+              },
+              {
+                title: 'Luxury Motorsports',
+                value: '9000',
+                imgSrc: luxuryMotorsportsImage
+              },
+              {
+                title: 'Chevrolet Camaro',
+                value: '9000',
+                imgSrc: chevroletCamaroImage
+              },
+              {
+                title: 'Jaguar Silver Back',
+                value: '9000',
+                imgSrc: jaguarImage
+              }
+            ]}
           />
         </ProductsInLine>
 
@@ -141,17 +148,17 @@ export default function MainPage() {
                 {
                   title: 'Buick Regal GS',
                   value: '115000',
-                  imgSrc: require('../../../public/images/buick_regal_gs_car_luxury_car_mid_size_car_sedan_white_car_hd_cars-1920x1080.jpg')
+                  imgSrc: buickImage
                 },
                 {
                   title: 'BMW 5 Series Touring M Sport',
                   value: '3000000',
-                  imgSrc: require('../../../public/images/bmw-5-series-touring-m-sport.jpg')
+                  imgSrc: bmwImage
                 },
                 {
                   title: 'Lamborghini Egoista',
                   value: '100000',
-                  imgSrc: require('../../../public/images/lamborghini_egoista.jpg')
+                  imgSrc: lamborghiniImage
                 }
               ]
             }

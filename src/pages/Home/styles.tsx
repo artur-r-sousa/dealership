@@ -6,7 +6,7 @@ interface StyleProps {
   isLeft?: boolean;
   isRight?: boolean;
   backgroundColor?: string;
-  roundedBackground?: boolean;
+  isroundedbackground?: boolean;
 }
 
 export const PageContainer = styled.div`
@@ -150,7 +150,7 @@ export const Col = styled.div<StyleProps>`
   align-items: center;
   margin-left: 50px;
 
-  ${(props) => props.roundedBackground && `
+  ${(props) => props.isroundedbackground && `
     border-radius: 360px;
     width: 75%;
   `};
